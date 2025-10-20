@@ -269,12 +269,10 @@ footer a {
     width: 45%;
     border-radius: 20px;
   }
-  
-aside div{
+
+  aside div {
     display: inline-block;
     width: 30%;
-    margin:auto
+    margin: auto;
+  }
 }
-    
-
- 
