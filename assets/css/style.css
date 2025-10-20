@@ -46,6 +46,7 @@ header nav li {
 header nav li a {
   color: white;
   text-decoration: none;
+  margin-right: 8px;
 }
 header nav li a:hover {
   color: red;
@@ -76,6 +77,16 @@ section h2 {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+
+#cornice {
+  display: inline-block;
+  border: 5px solid rgb(180, 3, 180);
+}
+#cornice img {
+  border: 5px solid rgb(0, 143, 199);
+  padding: 5px;
+  display: block;
+}
 h1 {
   font-size: 2.6rem;
   font-weight: bold;
@@ -161,6 +172,10 @@ button {
   font-weight: bold;
 }
 
+section h2 {
+  background-color: #a0a0a0;
+}
+
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
   text-align: center;
@@ -198,4 +213,60 @@ footer {
 }
 footer a {
   color: fuchsia;
+}
+
+@media (min-width: 768px) {
+  article {
+    padding-left: 2em;
+    padding-right: 3em;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  main table {
+    width: 70%;
+    margin: 40px auto;
+  }
+  article section input {
+    width: 60%;
+    height: 40px;
+  }
+  article button {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 95%;
+    margin: 0 auto;
+  }
+  header {
+    text-align: left;
+    padding: 5px;
+  }
+  header p,
+  header img,
+  header p,
+  header nav {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  header nav {
+    padding-left: 12em;
+  }
+  article {
+    padding: 2px;
+  }
+  iframe {
+    display: inline-block;
+    max-width: 50%;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+  article section {
+    display: inline-block;
+    width: 45%;
+    border-radius: 20px;
+  }
 }
